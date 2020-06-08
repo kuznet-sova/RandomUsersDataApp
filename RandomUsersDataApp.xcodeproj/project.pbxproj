@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		8C4330FA248ED8C400A96FCF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4330F9248ED8C400A96FCF /* AppDelegate.swift */; };
 		8C4330FC248ED8C400A96FCF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4330FB248ED8C400A96FCF /* SceneDelegate.swift */; };
-		8C4330FE248ED8C400A96FCF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4330FD248ED8C400A96FCF /* ViewController.swift */; };
 		8C433101248ED8C400A96FCF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C4330FF248ED8C400A96FCF /* Main.storyboard */; };
 		8C433103248ED8CA00A96FCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C433102248ED8CA00A96FCF /* Assets.xcassets */; };
 		8C433106248ED8CA00A96FCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C433104248ED8CA00A96FCF /* LaunchScreen.storyboard */; };
+		8C433112248EDB0200A96FCF /* ContactListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C433111248EDB0200A96FCF /* ContactListViewController.swift */; };
+		8C433114248EE0DA00A96FCF /* DetailContactListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C433113248EE0DA00A96FCF /* DetailContactListViewController.swift */; };
+		8C433116248EE10700A96FCF /* DetailInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C433115248EE10700A96FCF /* DetailInfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8C4330F6248ED8C400A96FCF /* RandomUsersDataApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomUsersDataApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C4330F9248ED8C400A96FCF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8C4330FB248ED8C400A96FCF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8C4330FD248ED8C400A96FCF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8C433100248ED8C400A96FCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8C433102248ED8CA00A96FCF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8C433105248ED8CA00A96FCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8C433107248ED8CA00A96FCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C433111248EDB0200A96FCF /* ContactListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListViewController.swift; sourceTree = "<group>"; };
+		8C433113248EE0DA00A96FCF /* DetailContactListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailContactListViewController.swift; sourceTree = "<group>"; };
+		8C433115248EE10700A96FCF /* DetailInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,41 @@
 		8C4330F8248ED8C400A96FCF /* RandomUsersDataApp */ = {
 			isa = PBXGroup;
 			children = (
-				8C4330F9248ED8C400A96FCF /* AppDelegate.swift */,
-				8C4330FB248ED8C400A96FCF /* SceneDelegate.swift */,
-				8C4330FD248ED8C400A96FCF /* ViewController.swift */,
-				8C4330FF248ED8C400A96FCF /* Main.storyboard */,
-				8C433102248ED8CA00A96FCF /* Assets.xcassets */,
-				8C433104248ED8CA00A96FCF /* LaunchScreen.storyboard */,
+				8C43310E248ED92A00A96FCF /* ViewControllers */,
+				8C43310F248ED94600A96FCF /* Storyboards */,
+				8C433110248ED95700A96FCF /* Sourse */,
 				8C433107248ED8CA00A96FCF /* Info.plist */,
 			);
 			path = RandomUsersDataApp;
+			sourceTree = "<group>";
+		};
+		8C43310E248ED92A00A96FCF /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8C4330F9248ED8C400A96FCF /* AppDelegate.swift */,
+				8C4330FB248ED8C400A96FCF /* SceneDelegate.swift */,
+				8C433111248EDB0200A96FCF /* ContactListViewController.swift */,
+				8C433113248EE0DA00A96FCF /* DetailContactListViewController.swift */,
+				8C433115248EE10700A96FCF /* DetailInfoViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		8C43310F248ED94600A96FCF /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				8C4330FF248ED8C400A96FCF /* Main.storyboard */,
+				8C433104248ED8CA00A96FCF /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		8C433110248ED95700A96FCF /* Sourse */ = {
+			isa = PBXGroup;
+			children = (
+				8C433102248ED8CA00A96FCF /* Assets.xcassets */,
+			);
+			path = Sourse;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +168,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C4330FE248ED8C400A96FCF /* ViewController.swift in Sources */,
 				8C4330FA248ED8C400A96FCF /* AppDelegate.swift in Sources */,
 				8C4330FC248ED8C400A96FCF /* SceneDelegate.swift in Sources */,
+				8C433114248EE0DA00A96FCF /* DetailContactListViewController.swift in Sources */,
+				8C433112248EDB0200A96FCF /* ContactListViewController.swift in Sources */,
+				8C433116248EE10700A96FCF /* DetailInfoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,7 +326,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ru.first.RandomUsersDataApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -312,7 +344,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ru.first.RandomUsersDataApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
