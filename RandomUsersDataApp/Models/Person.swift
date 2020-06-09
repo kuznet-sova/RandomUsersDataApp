@@ -21,13 +21,18 @@ extension Person {
     static func getPersonsList() -> [Person] {
         var contactsList = [Person]()
         
-        for _ in 0 ..< DataManager().nameBase.count {
+        let shuffledName = DataManager().nameBase.shuffled()
+        let shuffledSecondName = DataManager().secondNameBase.shuffled()
+        let shuffledPhone = DataManager().phoneBase.shuffled()
+        let shuffledEmail = DataManager().emailBase.shuffled()
+        
+        for index in 0 ..< DataManager().nameBase.count {
             contactsList.append (
                 Person (
-                    name: DataManager().nameBase.randomElement()!,
-                    secondName: DataManager().secondNameBase.randomElement()!,
-                    phone: DataManager().phoneBase.randomElement()!,
-                    email: DataManager().emailBase.randomElement()!)
+                    name: shuffledName[index],
+                    secondName: shuffledSecondName[index],
+                    phone: shuffledPhone[index],
+                    email: shuffledEmail[index])
             )
         }
         
