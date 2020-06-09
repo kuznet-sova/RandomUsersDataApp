@@ -31,11 +31,11 @@ class DetailPersonListViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let fullInfoCell = tableView.dequeueReusableCell(withIdentifier: "fullInfo", for: indexPath)
         
-        if indexPath.row % 2 == 0 {
-            fullInfoCell.textLabel?.text = personDetail[indexPath.row].phone
+        if indexPath.row == 0 {
+            fullInfoCell.textLabel?.text = personDetail[indexPath.section].phone
             fullInfoCell.imageView?.image = UIImage(systemName: "phone")
         } else {
-            fullInfoCell.textLabel?.text = personDetail[indexPath.row].email
+            fullInfoCell.textLabel?.text = personDetail[indexPath.section].email
             fullInfoCell.imageView?.image = UIImage(systemName: "tray")
         }
         
