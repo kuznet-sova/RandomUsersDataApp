@@ -17,9 +17,14 @@ struct Person {
     }
 }
 
+var contactsList = [Person]()
+
 extension Person {
     static func getPersonsList() -> [Person] {
-        var contactsList = [Person]()
+        
+        if contactsList.count != 0 {
+            return contactsList
+        }
         
         let shuffledName = DataManager().nameBase.shuffled()
         let shuffledSecondName = DataManager().secondNameBase.shuffled()
