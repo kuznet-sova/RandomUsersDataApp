@@ -16,10 +16,6 @@ class ContactListViewController: UITableViewController {
         super.viewDidLoad()
     }
 
-//    override func numberOfSections(in tableView: UITableView) -> Int {
-//        return contact.count
-//    }
-
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return contact.count
     }
@@ -32,4 +28,11 @@ class ContactListViewController: UITableViewController {
         return shortInfoCell
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let indexPath = tableView.indexPathForSelectedRow
+            else { return }
+        guard let detailInfoView = segue.destination as? DetailInfoViewController
+            else { return }
+        detailInfoView.contact = contact[indexPath.row]
+    }
 }

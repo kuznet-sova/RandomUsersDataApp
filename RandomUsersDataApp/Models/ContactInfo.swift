@@ -30,10 +30,6 @@ extension ContactInfo {
                     phone: ContactsDatabase().phoneBase.randomElement()!,
                     email: ContactsDatabase().emailBase.randomElement()!)
             )
-//            (contactsList.append(ContactsDatabase().nameBase.randomElement()!)
-//            contactsList.append(ContactsDatabase().secondNameBase.randomElement()!)
-//            contactsList.append(ContactsDatabase().phoneBase.randomElement()!)
-//            contactsList.append(ContactsDatabase().emailBase.randomElement()!))
         }
         
         return contactsList

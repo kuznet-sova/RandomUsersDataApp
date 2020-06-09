@@ -68,7 +68,7 @@
 				8C433117248FF1FF00A96FCF /* Models */,
 				8C43310F248ED94600A96FCF /* Storyboards */,
 				8C433110248ED95700A96FCF /* Sourse */,
-				8C433107248ED8CA00A96FCF /* Info.plist */,
+				8C43311C249018D700A96FCF /* SupportingFiles */,
 			);
 			path = RandomUsersDataApp;
 			sourceTree = "<group>";
@@ -76,8 +76,6 @@
 		8C43310E248ED92A00A96FCF /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				8C4330F9248ED8C400A96FCF /* AppDelegate.swift */,
-				8C4330FB248ED8C400A96FCF /* SceneDelegate.swift */,
 				8C433111248EDB0200A96FCF /* ContactListViewController.swift */,
 				8C433113248EE0DA00A96FCF /* DetailContactListViewController.swift */,
 				8C433115248EE10700A96FCF /* DetailInfoViewController.swift */,
@@ -109,6 +107,16 @@
 				8C43311A248FF57400A96FCF /* ContactsDatabase.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		8C43311C249018D700A96FCF /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				8C4330F9248ED8C400A96FCF /* AppDelegate.swift */,
+				8C4330FB248ED8C400A96FCF /* SceneDelegate.swift */,
+				8C433107248ED8CA00A96FCF /* Info.plist */,
+			);
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -334,7 +342,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G39AAW7HHA;
-				INFOPLIST_FILE = RandomUsersDataApp/Info.plist;
+				INFOPLIST_FILE = RandomUsersDataApp/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -352,7 +360,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G39AAW7HHA;
-				INFOPLIST_FILE = RandomUsersDataApp/Info.plist;
+				INFOPLIST_FILE = RandomUsersDataApp/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
