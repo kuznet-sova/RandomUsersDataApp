@@ -13,12 +13,12 @@ class DetailInfoViewController: UIViewController {
     @IBOutlet var phoneLabel: UILabel!
     @IBOutlet var emailLabel: UILabel!
     
-    var contact: ContactInfo!
+    var person: Person!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        phoneLabel.text = "Phone: \(contact.phone)"
-        emailLabel.text = "Email: \(contact.email)"
+        phoneLabel.text = "Phone: \(person.phone)"
+        emailLabel.text = "Email: \(person.email)"
     }
 }

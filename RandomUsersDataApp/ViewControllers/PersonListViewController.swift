@@ -10,20 +10,19 @@ import UIKit
 
 class PersonListViewController: UITableViewController {
 
-    var contact = Person.getContactsList()
+    var person = Person.getPersonsList()
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return contact.count
+        return person.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let shortInfoCell = tableView.dequeueReusableCell(withIdentifier: "shortInfo", for: indexPath)
-        
-        shortInfoCell.textLabel?.text = contact[indexPath.row].fullName
+        shortInfoCell.textLabel?.text = person[indexPath.row].fullName
         
         return shortInfoCell
     }
@@ -33,6 +32,6 @@ class PersonListViewController: UITableViewController {
             else { return }
         guard let detailInfoView = segue.destination as? DetailInfoViewController
             else { return }
-        detailInfoView.contact = contact[indexPath.row]
+        detailInfoView.person = person[indexPath.row]
     }
 }

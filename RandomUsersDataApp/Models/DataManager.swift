@@ -6,8 +6,7 @@
 //  Copyright © 2020 Irina Kuznetsova. All rights reserved.
 //
 
-struct ContactsDatabase {
-    
+struct DataManager {
     let nameBase = ["Jack",
                     "James",
                     "Daniel",
@@ -48,5 +47,4 @@ struct ContactsDatabase {
                      "chavezcharles@gmail.com",
                      "douglasadams@yahoo.com",
                      "austin71@gmail.com"]
-    
 }
