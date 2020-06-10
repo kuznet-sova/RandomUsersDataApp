@@ -12,10 +12,6 @@ class DetailPersonListViewController: UITableViewController {
 
     var personDetail = Person.getPersonsList()
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 2
     }
